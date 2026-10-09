@@ -25,7 +25,9 @@ Step	Comparison	Result
 5	5 < 6	1 → 2 → 3 → 4 → 5
 6	list1 is empty	1 → 2 → 3 → 4 → 5 → 6
 
-Output: 1 → 2 → 3 → 4 → 5 → 6
+Output:
+
+1 → 2 → 3 → 4 → 5 → 6
 
 3. Time Complexity
 
