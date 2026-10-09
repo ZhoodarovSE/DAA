@@ -15,15 +15,28 @@ Consider this linked list, where node 4 points back to node 2:
 
 1 → 2 → 3 → 4 → 2 → ...
 
-Step	Slow pointer	Fast pointer
-Start	Dummy	Dummy
-1	1	2
-2	2	4
-3	3	3
+Initial state:
 
-At step 3, both pointers reach node 3. Therefore, the algorithm returns true.
+slow = dummy
+fast = dummy
 
-If the list has no cycle, the fast pointer eventually reaches the end, and the algorithm returns false.
+Iteration 1:
+
+slow moves to node 1.
+fast moves to node 2.
+
+Iteration 2:
+
+slow moves to node 2.
+fast moves to node 4.
+
+Iteration 3:
+
+slow moves to node 3.
+fast moves to node 3.
+Both pointers meet, so the algorithm returns true.
+
+If the list has no cycle, fast or fast.next eventually becomes null, and the algorithm returns false.
 
 3. Time Complexity
 
