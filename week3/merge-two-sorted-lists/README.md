@@ -17,13 +17,41 @@ Input:
 
 list1 = 1 → 3 → 5
 list2 = 2 → 4 → 6
-Step	Comparison	Result
-1	1 < 2	1
-2	3 < 2 is false	1 → 2
-3	3 < 4	1 → 2 → 3
-4	5 < 4 is false	1 → 2 → 3 → 4
-5	5 < 6	1 → 2 → 3 → 4 → 5
-6	list1 is empty	1 → 2 → 3 → 4 → 5 → 6
+
+Iteration 1:
+
+Compare 1 and 2.
+Since 1 < 2, select 1.
+Result: 1
+
+Iteration 2:
+
+Compare 3 and 2.
+Since 3 < 2 is false, select 2.
+Result: 1 → 2
+
+Iteration 3:
+
+Compare 3 and 4.
+Since 3 < 4, select 3.
+Result: 1 → 2 → 3
+
+Iteration 4:
+
+Compare 5 and 4.
+Since 5 < 4 is false, select 4.
+Result: 1 → 2 → 3 → 4
+
+Iteration 5:
+
+Compare 5 and 6.
+Since 5 < 6, select 5.
+Result: 1 → 2 → 3 → 4 → 5
+
+Final step:
+
+list1 is empty, so attach the remaining node 6.
+Result: 1 → 2 → 3 → 4 → 5 → 6
 
 Output:
 
